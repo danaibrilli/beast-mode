@@ -29,13 +29,5 @@
         tools:layout_editor_absoluteX="99dp"
         tools:layout_editor_absoluteY="343dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="UNFILLED MATERIAL BUTTON"
-        android:textColor="@color/green"
-        android:textSize="15sp"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="449dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
