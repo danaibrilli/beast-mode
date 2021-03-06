@@ -4,26 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PushUps">
+    tools:context=".PushUps"
+    android:id = "@+id/pushupspage">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/currentworkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
         android:text="Current Workout: Push-Ups"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="200pt"/>
+    <TextView
+        android:id="@+id/infopushups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leave your phone on the ground and tap anywhere on the screen with your nose as you do your push-ups!"
+        android:textSize="7pt"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@+id/currentworkout"
+        android:layout_marginTop="30pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"/>
     <TextView
         android:id="@+id/tvReps"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="15\n reps remaining"
+        android:textSize="10pt"
         android:textAlignment="center"
+        android:textColor="#E6B51029"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:src="@drawable/info_circle"
+        android:id="@+id/btninfoworkouts"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15pt"
+        android:background="#00000000"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
