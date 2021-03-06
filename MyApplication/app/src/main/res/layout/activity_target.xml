@@ -8,23 +8,77 @@
 
     <Button
         android:id="@+id/btnSetGoal"
+        android:background="@drawable/button_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:text="Set New Goal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/currWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Current Target: 78 kg"
+        android:text="Current Weight: 84 kg"
+        android:textSize="12pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/currTarget"
+        android:layout_marginBottom="10dp"/>
 
+    <TextView
+        android:id="@+id/currTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Target: 78 kg"
+        android:textSize="12pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/currBMI"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/currBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current BMI: 20"
+        android:textSize="12pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/targetBMI"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/targetBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target BMI: 20"
+        android:textSize="12pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnSetGoal"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/dontgiveup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONT GIVE UP!"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/doinggreat"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/doinggreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You're doing great!"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="150dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

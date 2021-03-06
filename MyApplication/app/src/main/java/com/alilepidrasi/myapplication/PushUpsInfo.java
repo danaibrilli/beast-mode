@@ -18,8 +18,7 @@ public class PushUpsInfo extends AppCompatActivity {
         okay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),PushUps.class);
-                startActivity(intent);
+                finish();
             }
         });
 
