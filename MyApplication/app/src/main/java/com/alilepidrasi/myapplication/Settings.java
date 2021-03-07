@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static java.lang.System.exit;
+
 public class Settings extends AppCompatActivity {
 
     @Override
@@ -54,8 +56,7 @@ public class Settings extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                System.exit(0);
+                finishAffinity();
             }
         });
 
