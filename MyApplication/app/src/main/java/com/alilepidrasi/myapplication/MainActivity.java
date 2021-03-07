@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button target = findViewById(R.id.btnTarget);
         Button track = findViewById(R.id.btnTrack);
         Button spin = findViewById(R.id.btnSpin);
+        ImageButton settings = findViewById(R.id.btnsettings);
 
         workout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
         track.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Track.class);
-                startActivity(intent);
+                CharSequence text = "Sorry, not ready yet, please try our Spin the Wheel instead!!";
+                Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                toast.show();
             }
         });
 
@@ -51,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Spin.class);
+                startActivity(intent);
+            }
+        });
+
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Settings.class);
                 startActivity(intent);
             }
         });

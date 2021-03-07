@@ -33,7 +33,7 @@
         android:id="@+id/tvReps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="15\n reps remaining"
+        android:text=""
         android:textSize="10pt"
         android:textAlignment="center"
         android:textColor="#E6B51029"

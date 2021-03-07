@@ -19,6 +19,8 @@
         <activity android:name=".Track" />
         <activity android:name=".Target" />
         <activity android:name=".Workouts" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Coupons" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

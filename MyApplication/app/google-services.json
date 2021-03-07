@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "640560084231",
+    "project_id": "beastmode-edf9d",
+    "storage_bucket": "beastmode-edf9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640560084231:android:c138c6c949bfd9825d81a2",
+        "android_client_info": {
+          "package_name": "com.alilepidrasi.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640560084231-vghlh13gm1v9nomsc2ov62anj212b1c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFpFREoy1gMQ8il2AU99dKEZ7HkcZ5MBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640560084231-vghlh13gm1v9nomsc2ov62anj212b1c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
